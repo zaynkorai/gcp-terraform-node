@@ -1,6 +1,5 @@
 resource "google_compute_instance" "nodejs_instance" {
-  count        = 2
-  name         = "nodejs-instance-${count.index}"
+  name         = "nodejs-instance"
   machine_type = "f1-micro"
 
   // Create a new boot disk from an image (Lets use one created by Packer)
